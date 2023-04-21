@@ -16,7 +16,7 @@ OPTIONS:
 
 ## プロジェクトについて(about)
 開発者：大野陽基  
-ライセンス：MITライセンス  
+ライセンス：MITライセンス  https://img.shields.io/gitlab/license/shortURLz
 名前の由来：URLを短くするサービスにちなんで  
 バージョン：0.00  
 アイコン：
