@@ -24,5 +24,6 @@ OPTIONS:
 ![](https://img.shields.io/badge/version-0.00-blue)  
 
 
-アイコン：  
+アイコン：![sowtware](https://user-images.githubusercontent.com/90128412/233767454-2e85c0a8-12a4-4851-b8a9-c68ebbbf6f9c.svg)  
+
 
