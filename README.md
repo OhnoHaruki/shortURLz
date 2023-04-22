@@ -21,4 +21,8 @@ OPTIONS:
 
 名前の由来：URLを短くするサービスにちなんで  
 バージョン：0.00  
-アイコン：
+![](https://img.shields.io/badge/version-0.00-blue)  
+
+
+アイコン：  
+
