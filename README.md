@@ -1,20 +1,22 @@
 # shortyURLz
 URLを簡単に短く、簡潔にできます。
 
-## 概要
+# 概要
 URLを入力することでURLを簡単に短くすることができるサービスです。  
 このサービスを使用することでURLの見栄えが良くなったり、SNS上にURLを載せる際に文字数の節約ができます。  
 bit.lyのAPIを使用して作成します。  
 
-## 使い方(Usage)
-USAGE:  
-    shortURLz [OPTIONS]<PATH>
+# 使い方(Usage)
+## コマンド
 
-OPTIONS:  
-    -v,--version    バージョンを示す。
-    -h,--help   このヘルプテキストを見せる
+    Usage shortURLz<URL>[OPTION]
+    OPTION:
+    -h,--help   ヘルプメッセージの表示
+    -v,--version    バージョンの表示
+# インストール
+    brew install shortURLz
 
-## プロジェクトについて(about)
+# プロジェクトについて(about)
 開発者：大野陽基  
 ライセンス：MITライセンス  
 ![](https://img.shields.io/badge/license-MIT-green)  
