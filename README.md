@@ -9,7 +9,7 @@ bit.lyのAPIを使用して作成します。
 # 使い方(Usage)
 ## コマンド
 
-    Usage shortURLz<URL>[OPTION]
+    shortURLz<URL>[OPTION]
     OPTION:
     -h,--help   ヘルプメッセージの表示
     -v,--version    バージョンの表示
