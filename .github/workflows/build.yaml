@@ -35,4 +35,3 @@ jobs: #どの環境で実行するのか
           github-token: ${{ secrets.github_token }}
           path-to-lcov: coverage.lcov
         if: "matrix.os == 'ubuntu-latest'"
-

@@ -1,11 +1,11 @@
 package main
 import (
   "fmt"
-  "os" 
+  "os"
 )
-func goMain(args []string) int { 
+func goMain(args []string) int {
   fmt.Println("Hello World")
-  return 0 
+  return 0
 }
 func main() {
   status := goMain(os.Args)
