@@ -16,7 +16,7 @@ jobs: #どの環境で実行するのか
     steps:
       - name: setup go #GO環境の構築
         uses: actions/setup-go@v3
-        with
+        with:
           go-version: 1.18
       - name: checkout #リポジトリの内容の取り出し
         uses: actions/checkout@v3
