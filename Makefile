@@ -1,7 +1,16 @@
-PAKAGE_LIST := $(shell go list ./..)
-shortURLz:
-			go build -o shortURLz $(PAKAGE_LIST)
+PACKAGE_LIST := $(shell go list ./...)
+VERSION := 0.1.2
+NAME :=shortURLz
+DIST := $(NAME)-$(VERSION)
+
+yubs: coverage.out
+	go build -o yubs $(PACKAGE_LIST)
+	
+coverage.out:
+	go test -covermode=count -coverprofile=coverage.out $(PACKAGE_LIST)
+	
 test:
-			go test  -covermode=count -coverprofile=coverrage.out $(PAKAGE_LIST)
+	go test $(PACKAGE_LIST)
+	
 clean:
-			rm -f shortURLz
+	rm -f shortURLz
