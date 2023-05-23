@@ -10,7 +10,7 @@
             "request": "launch",
             "mode":"debug",
             "program": "/Users/oonoharuki/大学院授業/エンピリカルソフトウェア/shortURLz/cmd/shortURLz/main.go",
-            "args": ["--token","6897d8cf184df35355605aa2d4bf21a3491f5771"]
+            "args": ["--token",""]
         }
     ]
 }
