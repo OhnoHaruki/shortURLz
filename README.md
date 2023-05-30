@@ -14,10 +14,14 @@ bit.lyのAPIを使用して作成します。
 # 使い方(Usage)
 ## コマンド
 
-    shortURLz<URL>[OPTION]
-    OPTION:
-    -h,--help   ヘルプメッセージの表示
-    -v,--version    バージョンの表示
+    shortURLz[OPTION][URL]
+    OPTIONS:
+    -t,--token<TOKEN>      このサービスを使うためのトークンを指定する。このトークンは必須。
+    -c,--config<CONFIG>     設定ファイルを指定する。
+    -g,--group              このサービスの名前を設定する。デフォルトはShortURLzとなる。
+    -d,--delete             保持されたURL情報を削除する。
+    -h,--help               ヘルプメッセージの表示
+    -v,--version            バージョンの表示
 # インストール
     brew install shortURLz
 
