@@ -3,7 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/OhnoHaruki/shortURLz/badge.svg?branch=main)](https://coveralls.io/github/OhnoHaruki/shortURLz?branch=main)
 
 
-# shortyURLz
+# shortURLz
 URLを簡単に短く、簡潔にできます。
 
 # 概要
