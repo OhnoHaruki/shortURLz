@@ -2,7 +2,7 @@
     // IntelliSense を使用して利用可能な属性を学べます。
     // 既存の属性の説明をホバーして表示します。
     // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.0.1",
+    "version": "0.0.10",
     "configurations": [
         {
             "name": "List Urls for Debugging",
@@ -10,7 +10,7 @@
             "request": "launch",
             "mode":"debug",
             "program": "/Users/oonoharuki/大学院授業/エンピリカルソフトウェア/shortURLz/cmd/shortURLz/main.go",
-            "args": ["--token",""]
+            "args": ["--token","6897d8cf184df35355605aa2d4bf21a3491f5771"]
         }
     ]
 }
