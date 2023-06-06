@@ -15,13 +15,14 @@ bit.lyのAPIを使用して作成します。
 ## コマンド
 
     shortURLz[OPTION][URL]
+
     OPTIONS:
-    -t,--token<TOKEN>      このサービスを使うためのトークンを指定する。このトークンは必須。
-    -c,--config<CONFIG>     設定ファイルを指定する。
-    -g,--group              このサービスの名前を設定する。デフォルトはShortURLzとなる。
-    -d,--delete             保持されたURL情報を削除する。
-    -h,--help               ヘルプメッセージの表示
-    -v,--version            バージョンの表示
+    -t,--token<TOKEN>      このサービスを使うためのトークンを指定します。このトークンは必須です。
+    -c,--config<CONFIG>     設定ファイルを指定します。
+    -g,--group              このサービスの名前を設定します。デフォルトはShortURLzとなります。
+    -d,--delete             保持されたURL情報を削除します。
+    -h,--help               ヘルプメッセージの表示します。
+    -v,--version            バージョンの表示します。
 # インストール
     brew install shortURLz
 
@@ -30,8 +31,8 @@ bit.lyのAPIを使用して作成します。
 ライセンス：MITライセンス  
 ![](https://img.shields.io/badge/license-MIT-green)  
 
-名前の由来：URLを短くするサービスにちなんで  
-バージョン：0.00  
+名前の由来：URLを短くするサービスにちなんでつけました  
+バージョン：pre-release 
 ![](https://img.shields.io/badge/version-0.00-blue)  
 
 
