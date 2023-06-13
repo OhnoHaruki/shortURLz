@@ -1,0 +1,3 @@
+[submodule "docs/themes/holy"]
+	path = docs/themes/holy
+	url = https://github.com/serkodev/holy.git
