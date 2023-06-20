@@ -1,6 +1,7 @@
----
-title=shortURLz_HOME
----
++++
+data = 2023-06-20
+title = "shortURLz_HOME"
++++
 
 # shortURLz
 URLを簡単に短く、簡潔にできます。

@@ -1,5 +1,6 @@
 baseURL = "https://oono.github.io/shortURLz"
 languageCode = "ja-JP"
+themeDir = "themes"
 title = "shortURLz"
 theme = "holy"
 defaultContentLanguage = "ja"
