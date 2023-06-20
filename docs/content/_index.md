@@ -11,8 +11,8 @@ URLを入力することでURLを簡単に短くすることができるサー�
 bit.lyのAPIを使用して作成します。  
 
 # 使い方(Usage)
-## コマンド
 
+## コマンド
     shortURLz[OPTION][URL]
 
     OPTIONS:
