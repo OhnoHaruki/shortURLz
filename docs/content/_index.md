@@ -3,6 +3,10 @@ data = 2023-06-20
 title = "shortURLz_HOME"
 +++
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/OhnoHaruki/shortURLz)](https://goreportcard.com/report/github.com/OhnoHaruki/shortURLz)  
+[![codebeat badge](https://codebeat.co/badges/b2b04398-2bbd-459c-84b3-aacec61e0417)](https://codebeat.co/projects/github-com-ohnoharuki-shorturlz-main)  
+[![Coverage Status](https://coveralls.io/repos/github/OhnoHaruki/shortURLz/badge.svg?branch=main)](https://coveralls.io/github/OhnoHaruki/shortURLz?branch=main)
+
 # shortURLz
 URLを簡単に短く、簡潔にできます。
 
