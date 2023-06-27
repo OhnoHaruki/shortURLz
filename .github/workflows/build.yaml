@@ -1,7 +1,7 @@
 # .github/workflows/build.yamlを作成
 on: #どのタイミングで実行するのか(今回は**なので全てのブランチがpushされた時)
   push:
-    brunches:
+    branches:
       _"**"
 
 jobs: #どの環境で実行するのか
