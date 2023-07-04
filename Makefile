@@ -1,19 +1,23 @@
-PACKAGE_LIST := $(shell go list ./...)
 VERSION := 0.1.10
 NAME := shortURLz
 DIST := $(NAME)-$(VERSION)
+USER_NAME := OhnoHaruki
+REPO_NAME := $(USER_NAME)/$(NAME)
+PACKAGE_LIST := $(shell go list ./...)
 
-shortURLz: coverage.out cmd/shortURLz/main.go *.go
-	go build -o shortURLz cmd/shortURLz/main.go cmd/$(NAME)/generate_completion.go
 
-coverage.out: cmd/shortURLz/main_test.go
+$(NAME): coverage.out
+	go build -o $(NAME) cmd/$(NAME)/main.go cmd/$(NAME)/generate_completion.go
+
+
+coverage.out:
 	go test -covermode=count \
 		-coverprofile=coverage.out $(PACKAGE_LIST)
 
-docker: shortURLz
-#	docker build -t ghcr.io/Ohnoharuki/shortURLz:$(VERSION) -t ghcr.io/Ohnoharuki/shortURLz:latest .
-	docker buildx build -t ghcr.io/Ohnoharuki/shortURLz:$(VERSION) \
-		-t ghcr.io/Ohnoharuki/shortURLz:latest --platform=linux/arm64/v8,linux/amd64 --push .
+docker: $(NAME)
+#	docker build -t ghcr.io/$(REPO_NAME):$(VERSION) -t ghcr.io/$(REPO_NAME):latest .
+	docker buildx build -t ghcr.io/$(REPO_NAME):$(VERSION) \
+		-t ghcr.io/$(REPO_NAME):latest --platform=linux/arm64/v8,linux/amd64 --push .
 
 # refer from https://pod.hatenablog.com/entry/2017/06/13/150342
 define _createDist
@@ -24,7 +28,7 @@ define _createDist
 	tar cfz dist/$(DIST)_$(1)_$(2).tar.gz -C dist/$(1)_$(2) $(DIST)
 endef
 
-dist: shortURLz
+dist: $(NAME)
 	@$(call _createDist,darwin,amd64,)
 	@$(call _createDist,darwin,arm64,)
 	@$(call _createDist,windows,amd64,.exe)
@@ -36,4 +40,5 @@ distclean: clean
 	rm -rf dist
 
 clean:
-	rm -f shortURLz coverage.out
+	rm -f $(NAME) coverage.out
+	rm -rf completions cmd/shortURLz/completions
