@@ -4,7 +4,7 @@ NAME := shortURLz
 DIST := $(NAME)-$(VERSION)
 
 shortURLz: coverage.out cmd/shortURLz/main.go *.go
-	go build -o shortURLz cmd/shortURLz/main.go cmd/$(NAME)/generate_compilation.go
+	go build -o shortURLz cmd/shortURLz/main.go cmd/$(NAME)/generate_completion.go
 
 coverage.out: cmd/shortURLz/main_test.go
 	go test -covermode=count \
@@ -18,7 +18,7 @@ docker: shortURLz
 # refer from https://pod.hatenablog.com/entry/2017/06/13/150342
 define _createDist
 	mkdir -p dist/$(1)_$(2)/$(DIST)
-	GOOS=$1 GOARCH=$2 go build -o dist/$(1)_$(2)/$(DIST)/$(NAME)$(3) cmd/$(NAME)/main.go cmd/$(NAME)/generate_compilation.go
+	GOOS=$1 GOARCH=$2 go build -o dist/$(1)_$(2)/$(DIST)/$(NAME)$(3) cmd/$(NAME)/main.go cmd/$(NAME)/generate_completion.go
 	cp -r README.md LICENSE dist/$(1)_$(2)/$(DIST)
 #	cp -r docs/public dist/$(1)_$(2)/$(DIST)/docs
 	tar cfz dist/$(DIST)_$(1)_$(2).tar.gz -C dist/$(1)_$(2) $(DIST)
