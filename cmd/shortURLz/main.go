@@ -118,6 +118,7 @@ func parseOptions(args []string) (*options, []string, *ShortURLzError) {
 
 	if completions {
 		fmt.Println("do completion")
+		GenerateCompletion(flags)
 	}
 	if opts.flagSet.helpFlag {
 		fmt.Println(helpMessage(args))
