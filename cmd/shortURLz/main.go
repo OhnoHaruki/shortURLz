@@ -88,6 +88,8 @@ func (opts *options) mode(args []string) shortURLz.Mode {
 	}
 }
 
+var completions bool
+
 /*
 Define the options and return the pointer to the options and the pointer to the flagset.
 */
@@ -102,6 +104,8 @@ func buildOptions(args []string) (*options, *flag.FlagSet) {
 	flags.BoolVarP(&opts.flagSet.deleteFlag, "delete", "d", false, "delete the specified shorten URL.")
 	flags.BoolVarP(&opts.flagSet.helpFlag, "help", "h", false, "print this message and exit.")
 	flags.BoolVarP(&opts.flagSet.versionFlag, "version", "v", false, "print the version and exit.")
+	flags.BoolVarP(&completions, "generate-completions", "", false, "generate completions")
+	flags.MarkHidden("generate-completions")
 	return opts, flags
 }
 
@@ -111,6 +115,10 @@ parseOptions parses options from the given command line arguments.
 func parseOptions(args []string) (*options, []string, *ShortURLzError) {
 	opts, flags := buildOptions(args)
 	flags.Parse(args[1:])
+
+	if completions {
+		fmt.Println("do completion")
+	}
 	if opts.flagSet.helpFlag {
 		fmt.Println(helpMessage(args))
 		return nil, nil, &ShortURLzError{statusCode: 0, message: ""}
