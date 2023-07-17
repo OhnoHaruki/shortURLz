@@ -24,7 +24,7 @@ bit.lyのAPIを使用して作成します。
     -h,--help               ヘルプメッセージの表示します。
     -v,--version            バージョンの表示します。
 # インストール
-    brew install shortURLz
+    brew install OhnoHaruki/tap/shortURLz
 
 # プロジェクトについて(about)
 開発者：大野陽基  
